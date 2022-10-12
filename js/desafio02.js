@@ -59,7 +59,7 @@ function fnc_js_finalizarCarritoCompras() {
     //uso sweet alert para que el usuario confirme su compra, cuando toca si se vacia el carrito
     Swal.fire({
       title: '¿Deseas finalizar tu compra?',
-      text: `Total a pagar: $ ${precioFinal}`,
+      text: `Total a pagar: ${precioFinal}`,
       showCancelButton: true,
       confirmButtonColor: '#008f39',
       cancelButtonColor: '#d33',
