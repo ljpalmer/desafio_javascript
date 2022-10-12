@@ -1,0 +1,96 @@
+.nombre__cliente{
+    padding-left: 4rem;
+    font-weight: 900;
+}
+
+.productos__busqueda{
+    margin: 5rem;
+    font-size: 2rem;
+    font-family: $body-font-family-poppins;
+
+    #texto_buscar{
+    width: 80%;
+    font-size: 2rem;
+    }
+}   
+
+.productos__listado{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+
+    .productos__carrito{
+        width: 30%;       
+        
+        #carrito{
+            border: 1.5px solid rgb(206, 206, 206);
+            padding: 1rem;
+            
+            div{
+                font-weight: 900;
+            }
+            button {
+                width: 100%;
+            }
+            p {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    }
+    .productos__contenedor {  
+        width: 60%;      
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        margin: 5rem;
+      }
+
+
+
+    .card__product{
+        margin: 1rem;
+        border: 1.5px solid rgb(206, 206, 206);
+        border-radius: 0.5rem;        
+        font-size: 1.8rem;
+
+        .card__body{
+
+            .card__title{
+                font-size: 1.5rem;
+                font-weight: 900;
+                text-align: center;
+            }
+            .card__category{
+                font-size: 1rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            .card__price{
+                font-size: 2.8rem;
+                font-weight: 900;
+                text-align: center;
+                color: green;
+            }
+        }
+        .card__boton{                
+            font-size: 2rem;            
+            padding: 1rem;
+
+            button{
+                width: 100%;
+            }
+        }
+    }
+} 
+

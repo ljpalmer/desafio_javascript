@@ -1,0 +1,28 @@
+header {
+    background-color: $disfrutando-en-la-playa-sentada--2-hex;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 1.2rem 0px $disfrutando-en-la-playa-sentada--1-hex;
+    font-family: $body-font-family-roboto, cursive;
+    font-weight: 700;
+    font-size: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  
+    nav {
+      div {
+        display: flex;
+        justify-content: flex-end;
+  
+        .logo {
+          font-size: 3rem;
+          font-style: italic;
+        }
+  
+        a {
+          margin: 20px;
+        }
+      }
+    }
+  }
