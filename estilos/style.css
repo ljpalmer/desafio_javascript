@@ -63,15 +63,71 @@ header nav div a {
   margin: 20px;
 }
 
-.nombre__cliente {
-  padding-left: 4rem;
+#producto_imagen {
+  width: 100%;
+}
+
+.mensaje__alerta {
+  font-size: 1.8rem;
+}
+
+h4 {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.texto__producto {
+  color: black;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.label__producto {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.cliente__cabecera {
+  font-family: "Poppins", sans-serif;
+  margin-left: 5rem;
   font-weight: 900;
+}
+
+.cliente__datos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cliente__informacion {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2rem;
+  width: auto;
+}
+
+.btn, .swal2-actions {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.swal2-html-container, .swal2-validation-message, .swal2-input {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .productos__busqueda {
   margin: 5rem;
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
+  border: solid rgb(24, 153, 182) 0.1rem;
+  border-radius: 0.5rem;
+  padding: 3rem;
 }
 .productos__busqueda #texto_buscar {
   width: 80%;
@@ -125,7 +181,7 @@ header nav div a {
   text-align: center;
 }
 .productos__listado .card__product .card__body .card__price {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 900;
   text-align: center;
   color: green;

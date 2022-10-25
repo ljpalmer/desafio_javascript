@@ -1,27 +1,69 @@
-.nombre__cliente{
-    padding-left: 4rem;
+#producto_imagen{
+    width: 100%;
+}
+.mensaje__alerta {
+    font-size: 1.8rem;
+}
+h4 {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.texto__producto{    
+    color: black;
+    font-weight: bold;
+    font-family: $body-font-family-poppins; 
+    font-size: 1.4rem;
+}
+.label__producto{    
+    font-weight: bold;
+    font-family: $body-font-family-poppins; 
+    font-size: 1.2rem;
+}
+.cliente__cabecera{   
+    font-family: $body-font-family-poppins; 
+    margin-left: 5rem;    
     font-weight: 900;
 }
-
+.cliente__datos{    
+    display: flex;    
+    flex-direction: row;      
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cliente__informacion {
+    font-size: 1.8rem;
+    font-family: $body-font-family-poppins;
+    margin-top: 2rem;
+    width: auto;
+}
+.btn, .swal2-actions {
+    font-size: 1.2rem;
+    font-family: $body-font-family-poppins;
+}
+.swal2-html-container, .swal2-validation-message, .swal2-input {
+    font-size: 1.4rem;
+    font-family: $body-font-family-poppins;
+}
 .productos__busqueda{
     margin: 5rem;
     font-size: 2rem;
     font-family: $body-font-family-poppins;
-
-    #texto_buscar{
-    width: 80%;
-    font-size: 2rem;
+    border: solid rgb(24, 153, 182) 0.1rem;
+    border-radius: 0.5rem;
+    padding: 3rem;    
+    #texto_buscar{        
+        width: 80%;
+        font-size: 2rem;
     }
 }   
-
 .productos__listado{
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-
-
     .productos__carrito{
         width: 30%;       
         
@@ -55,9 +97,6 @@
         align-items: flex-end;
         margin: 5rem;
       }
-
-
-
     .card__product{
         margin: 1rem;
         border: 1.5px solid rgb(206, 206, 206);
@@ -77,7 +116,7 @@
                 text-align: center;
             }
             .card__price{
-                font-size: 2.8rem;
+                font-size: 2.2rem;
                 font-weight: 900;
                 text-align: center;
                 color: green;
