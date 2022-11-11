@@ -107,7 +107,9 @@ function fnc_js_reiniciarCarritoCompras() {
 };
 //funcion para agregar el producto al carrito de compras
 function fnc_js_agregarCarritoCompras(id){    
-        carrito_compras.push(productos.find(p => p.id == id));     
+        carrito_compras.push(productos.find(p => p.id == id));  
+        // console.log(productos.indexOf(productos.find(p => p.id == id)));  
+        // productos.splice(productos.indexOf(productos.find(p => p.id == id)));
         localStorage.setItem("carrito_compras", JSON.stringify(carrito_compras));   
         fnc_js_calcularTotalCarrito();      
 };
@@ -115,6 +117,9 @@ function fnc_js_agregarCarritoCompras(id){
 function fnc_js_calcularTotalCarrito() {
     let totalPagar = 0;
     for (const producto of carrito_compras) {
+        //console.log(producto.price);
+        // console.log(typeof producto.price);
+        // console.log(typeof totalPagar);        
         totalPagar += producto.price;
     }
     montoTotalCompra.innerText = '$ '+ totalPagar.toFixed(2);

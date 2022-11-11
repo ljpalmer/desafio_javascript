@@ -10,8 +10,8 @@ const productos = [
                 "stock": 94,
                 "brand": "Apple",
                 "category": "smartphones",
-                "thumbnail": "images/productos/1/thumbnail.jpg",
-                "images": ["images/productos/1/1.jpg", "images/productos/1/2.jpg", "images/productos/1/3.jpg", "images/productos/1/4.jpg", "images/productos/1/thumbnail.jpg"]
+                "thumbnail": "../images/productos/1/thumbnail.jpg",
+                "images": ["../images/productos/1/1.jpg", "../images/productos/1/2.jpg", "../images/productos/1/3.jpg", "../images/productos/1/4.jpg", "../images/productos/1/thumbnail.jpg"]
             }, {
                 "id": 2,
                 "title": "iPhone X",
@@ -23,8 +23,8 @@ const productos = [
                 "stock": 34,
                 "brand": "Apple",
                 "category": "smartphones",
-                "thumbnail": "images/productos/2/thumbnail.jpg",
-                "images": ["images/productos/2/1.jpg", "images/productos/2/2.jpg", "images/productos/2/3.jpg", "images/productos/2/thumbnail.jpg"]
+                "thumbnail": "../images/productos/2/thumbnail.jpg",
+                "images": ["../images/productos/2/1.jpg", "../images/productos/2/2.jpg", "../images/productos/2/3.jpg", "../images/productos/2/thumbnail.jpg"]
             }, {
                 "id": 3,
                 "title": "Samsung Universe 9",
@@ -35,8 +35,8 @@ const productos = [
                 "stock": 36,
                 "brand": "Samsung",
                 "category": "smartphones",
-                "thumbnail": "images/productos/3/thumbnail.jpg",
-                "images": ["images/productos/3/1.jpg", "images/productos/3/2.jpg", "images/productos/3/3.jpg", "images/productos/3/thumbnail.jpg"]
+                "thumbnail": "../images/productos/3/thumbnail.jpg",
+                "images": ["../images/productos/3/1.jpg", "../images/productos/3/2.jpg", "../images/productos/3/3.jpg", "../images/productos/3/thumbnail.jpg"]
             }, {
                 "id": 4,
                 "title": "OPPOF19",
@@ -47,8 +47,8 @@ const productos = [
                 "stock": 123,
                 "brand": "OPPO",
                 "category": "smartphones",
-                "thumbnail": "images/productos/4/thumbnail.jpg",
-                "images": ["images/productos/4/1.jpg", "images/productos/4/2.jpg", "images/productos/4/3.jpg", "images/productos/4/4.jpg", "images/productos/4/thumbnail.jpg"]
+                "thumbnail": "../images/productos/4/thumbnail.jpg",
+                "images": ["../images/productos/4/1.jpg", "../images/productos/4/2.jpg", "../images/productos/4/3.jpg", "../images/productos/4/4.jpg", "../images/productos/4/thumbnail.jpg"]
             }, {
                 "id": 5,
                 "title": "Huawei P30",
@@ -60,8 +60,8 @@ const productos = [
                 "stock": 32,
                 "brand": "Huawei",
                 "category": "smartphones",
-                "thumbnail": "images/productos/5/thumbnail.jpg",
-                "images": ["images/productos/5/1.jpg", "images/productos/5/2.jpg", "images/productos/5/3.jpg", "images/productos/5/thumbnail.jpg"]
+                "thumbnail": "../images/productos/5/thumbnail.jpg",
+                "images": ["../images/productos/5/1.jpg", "../images/productos/5/2.jpg", "../images/productos/5/3.jpg", "../images/productos/5/thumbnail.jpg"]
             }, {
                 "id": 6,
                 "title": "MacBook Pro",
@@ -72,8 +72,8 @@ const productos = [
                 "stock": 83,
                 "brand": "APPle",
                 "category": "laptops",
-                "thumbnail": "images/productos/6/thumbnail.png",
-                "images": ["images/productos/6/1.png", "images/productos/6/2.jpg", "images/productos/6/4.jpg"]
+                "thumbnail": "../images/productos/6/thumbnail.png",
+                "images": ["../images/productos/6/1.png", "../images/productos/6/2.jpg", "../images/productos/6/4.jpg"]
             }, {
                 "id": 7,
                 "title": "Samsung Galaxy Book",
@@ -85,8 +85,8 @@ const productos = [
                 "stock": 50,
                 "brand": "Samsung",
                 "category": "laptops",
-                "thumbnail": "images/productos/7/thumbnail.jpg",
-                "images": ["images/productos/7/1.jpg", "images/productos/7/2.jpg", "images/productos/7/thumbnail.jpg"]
+                "thumbnail": "../images/productos/7/thumbnail.jpg",
+                "images": ["../images/productos/7/1.jpg", "../images/productos/7/2.jpg", "../images/productos/7/thumbnail.jpg"]
             }, {
                 "id": 8,
                 "title": "Microsoft Surface Laptop 4",
@@ -98,8 +98,8 @@ const productos = [
                 "stock": 68,
                 "brand": "Microsoft Surface",
                 "category": "laptops",
-                "thumbnail": "images/productos/8/thumbnail.jpg",
-                "images": ["images/productos/8/1.jpg", "images/productos/8/2.jpg", "images/productos/8/thumbnail.jpg"]
+                "thumbnail": "../images/productos/8/thumbnail.jpg",
+                "images": ["../images/productos/8/1.jpg", "../images/productos/8/2.jpg", "../images/productos/8/thumbnail.jpg"]
             }, {
                 "id": 9,
                 "title": "Infinix INBOOK",
@@ -110,8 +110,8 @@ const productos = [
                 "stock": 96,
                 "brand": "Infinix",
                 "category": "laptops",
-                "thumbnail": "images/productos/9/thumbnail.jpg",
-                "images": ["images/productos/9/1.jpg", "images/productos/9/2.png", "images/productos/9/thumbnail.jpg"]
+                "thumbnail": "../images/productos/9/thumbnail.jpg",
+                "images": ["../images/productos/9/1.jpg", "../images/productos/9/2.png", "../images/productos/9/thumbnail.jpg"]
             }, {
                 "id": 10,
                 "title": "HP Pavilion 15-DK1056WM",
@@ -123,8 +123,8 @@ const productos = [
                 "stock": 89,
                 "brand": "HP Pavilion",
                 "category": "laptops",
-                "thumbnail": "images/productos/10/thumbnail.jpeg",
-                "images": ["images/productos/10/1.jpg", "images/productos/10/2.jpg", "images/productos/10/thumbnail.jpeg"]
+                "thumbnail": "../images/productos/10/thumbnail.jpeg",
+                "images": ["../images/productos/10/1.jpg", "../images/productos/10/2.jpg", "../images/productos/10/thumbnail.jpeg"]
             }, {
                 "id": 11,
                 "title": "perfume Oil",
@@ -136,8 +136,8 @@ const productos = [
                 "stock": 65,
                 "brand": "Impression of Acqua Di Gio",
                 "category": "fragrances",
-                "thumbnail": "images/productos/11/thumbnail.jpg",
-                "images": ["images/productos/11/1.jpg", "images/productos/11/2.jpg", "images/productos/11/thumbnail.jpg"]
+                "thumbnail": "../images/productos/11/thumbnail.jpg",
+                "images": ["../images/productos/11/1.jpg", "../images/productos/11/2.jpg", "../images/productos/11/thumbnail.jpg"]
             }, {
                 "id": 12,
                 "title": "Brown Perfume",
@@ -148,8 +148,8 @@ const productos = [
                 "stock": 52,
                 "brand": "Royal_Mirage",
                 "category": "fragrances",
-                "thumbnail": "images/productos/12/thumbnail.jpg",
-                "images": ["images/productos/12/1.jpg", "images/productos/12/2.jpg", "images/productos/12/thumbnail.jpg"]
+                "thumbnail": "../images/productos/12/thumbnail.jpg",
+                "images": ["../images/productos/12/1.jpg", "../images/productos/12/2.jpg", "../images/productos/12/thumbnail.jpg"]
             }, {
                 "id": 13,
                 "title": "Fog Scent Xpressio Perfume",
@@ -161,8 +161,8 @@ const productos = [
                 "stock": 61,
                 "brand": "Fog Scent Xpressio",
                 "category": "fragrances",
-                "thumbnail": "images/productos/13/thumbnail.webp",
-                "images": ["images/productos/13/1.jpg", "images/productos/13/2.png", "images/productos/13/thumbnail.webp"]
+                "thumbnail": "../images/productos/13/thumbnail.webp",
+                "images": ["../images/productos/13/1.jpg", "../images/productos/13/2.png", "../images/productos/13/thumbnail.webp"]
             }, {
                 "id": 14,
                 "title": "Non-Alcoholic Concentrated Perfume Oil",
@@ -174,8 +174,8 @@ const productos = [
                 "stock": 114,
                 "brand": "Al Munakh",
                 "category": "fragrances",
-                "thumbnail": "images/productos/14/thumbnail.jpg",
-                "images": ["images/productos/14/1.jpg", "images/productos/14/2.jpg", "images/productos/14/thumbnail.jpg"]
+                "thumbnail": "../images/productos/14/thumbnail.jpg",
+                "images": ["../images/productos/14/1.jpg", "../images/productos/14/2.jpg", "../images/productos/14/thumbnail.jpg"]
             }, {
                 "id": 15,
                 "title": "Eau De Perfume Spray",
@@ -186,8 +186,8 @@ const productos = [
                 "stock": 105,
                 "brand": "Lord - Al-Rehab",
                 "category": "fragrances",
-                "thumbnail": "images/productos/15/thumbnail.jpg",
-                "images": ["images/productos/15/1.jpg", "images/productos/15/2.jpg", "images/productos/15/thumbnail.jpg"]
+                "thumbnail": "../images/productos/15/thumbnail.jpg",
+                "images": ["../images/productos/15/1.jpg", "../images/productos/15/2.jpg", "../images/productos/15/thumbnail.jpg"]
             }, {
                 "id": 16,
                 "title": "Hyaluronic Acid Serum",
@@ -199,8 +199,8 @@ const productos = [
                 "stock": 110,
                 "brand": "L'Oreal Paris",
                 "category": "skincare",
-                "thumbnail": "images/productos/16/thumbnail.jpg",
-                "images": ["images/productos/16/1.png", "images/productos/16/2.webp", "images/productos/16/thumbnail.jpg"]
+                "thumbnail": "../images/productos/16/thumbnail.jpg",
+                "images": ["../images/productos/16/1.png", "../images/productos/16/2.webp", "../images/productos/16/thumbnail.jpg"]
             }, {
                 "id": 17,
                 "title": "Tree Oil 30ml",
@@ -212,8 +212,8 @@ const productos = [
                 "stock": 78,
                 "brand": "Hemani Tea",
                 "category": "skincare",
-                "thumbnail": "images/productos/17/thumbnail.jpg",
-                "images": ["images/productos/17/1.jpg", "images/productos/17/2.jpg", "images/productos/17/thumbnail.jpg"]
+                "thumbnail": "../images/productos/17/thumbnail.jpg",
+                "images": ["../images/productos/17/1.jpg", "../images/productos/17/2.jpg", "../images/productos/17/thumbnail.jpg"]
             }, {
                 "id": 18,
                 "title": "Oil Free Moisturizer 100ml",
@@ -225,8 +225,8 @@ const productos = [
                 "stock": 88,
                 "brand": "Dermive",
                 "category": "skincare",
-                "thumbnail": "images/productos/18/thumbnail.jpg",
-                "images": ["images/productos/18/1.jpg", "images/productos/18/2.jpg", "images/productos/18/thumbnail.jpg"]
+                "thumbnail": "../images/productos/18/thumbnail.jpg",
+                "images": ["../images/productos/18/1.jpg", "../images/productos/18/2.jpg", "../images/productos/18/thumbnail.jpg"]
             }, {
                 "id": 19,
                 "title": "Skin Beauty Serum.",
@@ -238,8 +238,8 @@ const productos = [
                 "stock": 54,
                 "brand": "ROREC White Rice",
                 "category": "skincare",
-                "thumbnail": "images/productos/19/thumbnail.jpg",
-                "images": ["images/productos/19/1.jpg", "images/productos/19/2.jpg", "images/productos/19/thumbnail.jpg"]
+                "thumbnail": "../images/productos/19/thumbnail.jpg",
+                "images": ["../images/productos/19/1.jpg", "../images/productos/19/2.jpg", "../images/productos/19/thumbnail.jpg"]
             }, {
                 "id": 20,
                 "title": "Freckle Treatment Cream- 15gm",
@@ -251,8 +251,8 @@ const productos = [
                 "stock": 140,
                 "brand": "Fair & Clear",
                 "category": "skincare",
-                "thumbnail": "images/productos/20/thumbnail.jpg",
-                "images": ["images/productos/20/1.jpg", "images/productos/20/2.jpg", "images/productos/20/thumbnail.jpg"]
+                "thumbnail": "../images/productos/20/thumbnail.jpg",
+                "images": ["../images/productos/20/1.jpg", "../images/productos/20/2.jpg", "../images/productos/20/thumbnail.jpg"]
             }, {
                 "id": 21,
                 "title": "- Daal Masoor 500 grams",
@@ -263,8 +263,8 @@ const productos = [
                 "stock": 133,
                 "brand": "Saaf & Khaas",
                 "category": "groceries",
-                "thumbnail": "images/productos/21/thumbnail.png",
-                "images": ["images/productos/21/1.png", "images/productos/21/2.jpg", "images/productos/21/thumbnail.png"]
+                "thumbnail": "../images/productos/21/thumbnail.png",
+                "images": ["../images/productos/21/1.png", "../images/productos/21/2.jpg", "../images/productos/21/thumbnail.png"]
             }, {
                 "id": 22,
                 "title": "Elbow Macaroni - 400 gm",
@@ -275,8 +275,8 @@ const productos = [
                 "stock": 146,
                 "brand": "Bake Parlor Big",
                 "category": "groceries",
-                "thumbnail": "images/productos/22/thumbnail.jpg",
-                "images": ["images/productos/22/1.jpg", "images/productos/22/2.jpg", "images/productos/22/thumbnail.jpg"]
+                "thumbnail": "../images/productos/22/thumbnail.jpg",
+                "images": ["../images/productos/22/1.jpg", "../images/productos/22/2.jpg", "../images/productos/22/thumbnail.jpg"]
             }, {
                 "id": 23,
                 "title": "Orange Essence Food Flavou",
@@ -287,8 +287,8 @@ const productos = [
                 "stock": 26,
                 "brand": "Baking Food Items",
                 "category": "groceries",
-                "thumbnail": "images/productos/23/thumbnail.jpg",
-                "images": ["images/productos/23/1.jpg", "images/productos/23/2.jpg", "images/productos/23/thumbnail.jpg"]
+                "thumbnail": "../images/productos/23/thumbnail.jpg",
+                "images": ["../images/productos/23/1.jpg", "../images/productos/23/2.jpg", "../images/productos/23/thumbnail.jpg"]
             }, {
                 "id": 24,
                 "title": "cereals muesli fruit nuts",
@@ -300,8 +300,8 @@ const productos = [
                 "stock": 113,
                 "brand": "fauji",
                 "category": "groceries",
-                "thumbnail": "images/productos/24/thumbnail.jpg",
-                "images": ["images/productos/24/1.jpg", "images/productos/24/2.jpg", "images/productos/24/thumbnail.jpg"]
+                "thumbnail": "../images/productos/24/thumbnail.jpg",
+                "images": ["../images/productos/24/1.jpg", "../images/productos/24/2.jpg", "../images/productos/24/thumbnail.jpg"]
             }, {
                 "id": 25,
                 "title": "Gulab Powder 50 Gram",
@@ -312,8 +312,8 @@ const productos = [
                 "stock": 47,
                 "brand": "Dry Rose",
                 "category": "groceries",
-                "thumbnail": "images/productos/25/thumbnail.jpg",
-                "images": ["images/productos/25/1.png", "images/productos/25/2.jpg", "images/productos/25/thumbnail.jpg"]
+                "thumbnail": "../images/productos/25/thumbnail.jpg",
+                "images": ["../images/productos/25/1.png", "../images/productos/25/2.jpg", "../images/productos/25/thumbnail.jpg"]
             }, {
                 "id": 26,
                 "title": "Plant Hanger For Home",
@@ -324,11 +324,11 @@ const productos = [
                 "stock": 131,
                 "brand": "Boho Decor",
                 "category": "home-decoration",
-                "thumbnail": "images/productos/26/thumbnail.jpg",
+                "thumbnail": "../images/productos/26/thumbnail.jpg",
                 "images": [
-                    "images/productos/26/1.jpg",
-                    "images/productos/26/2.jpg",
-                    "images/productos/26/thumbnail.jpg"
+                    "../images/productos/26/1.jpg",
+                    "../images/productos/26/2.jpg",
+                    "../images/productos/26/thumbnail.jpg"
                 ]
             }, {
                 "id": 27,
@@ -341,8 +341,8 @@ const productos = [
                 "stock": 17,
                 "brand": "Flying Wooden",
                 "category": "home-decoration",
-                "thumbnail": "images/productos/27/thumbnail.webp",
-                "images": ["images/productos/27/1.jpg", "images/productos/27/2.jpg", "images/productos/27/thumbnail.webp"]
+                "thumbnail": "../images/productos/27/thumbnail.webp",
+                "images": ["../images/productos/27/1.jpg", "../images/productos/27/2.jpg", "../images/productos/27/thumbnail.webp"]
             }, {
                 "id": 28,
                 "title": "3D Embellishment Art Lamp",
@@ -354,8 +354,8 @@ const productos = [
                 "stock": 54,
                 "brand": "LED Lights",
                 "category": "home-decoration",
-                "thumbnail": "images/productos/28/thumbnail.jpg",
-                "images": ["images/productos/28/1.jpg", "images/productos/28/2.jpg", "images/productos/28/thumbnail.jpg"]
+                "thumbnail": "../images/productos/28/thumbnail.jpg",
+                "images": ["../images/productos/28/1.jpg", "../images/productos/28/2.jpg", "../images/productos/28/thumbnail.jpg"]
             }, {
                 "id": 29,
                 "title": "Handcraft Chinese style",
@@ -367,8 +367,8 @@ const productos = [
                 "stock": 7,
                 "brand": "luxury palace",
                 "category": "home-decoration",
-                "thumbnail": "images/productos/29/thumbnail.webp",
-                "images": ["images/productos/29/1.jpg", "images/productos/29/2.jpg", "images/productos/29/thumbnail.webp"]
+                "thumbnail": "../images/productos/29/thumbnail.webp",
+                "images": ["../images/productos/29/1.jpg", "../images/productos/29/2.jpg", "../images/productos/29/thumbnail.webp"]
             }, {
                 "id": 30,
                 "title": "Key Holder",
@@ -380,7 +380,7 @@ const productos = [
                 "stock": 54,
                 "brand": "Golden",
                 "category": "home-decoration",
-                "thumbnail": "images/productos/30/thumbnail.jpg",
-                "images": ["images/productos/30/1.jpg", "images/productos/30/2.jpg", "images/productos/30/thumbnail.jpg"]
+                "thumbnail": "../images/productos/30/thumbnail.jpg",
+                "images": ["../images/productos/30/1.jpg", "../images/productos/30/2.jpg", "../images/productos/30/thumbnail.jpg"]
             }
         ]
