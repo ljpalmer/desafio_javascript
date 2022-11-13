@@ -71,9 +71,26 @@ header nav div a {
   font-size: 1.8rem;
 }
 
+.principal {
+  color: black;
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+
+.autor {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 h4 {
   color: black;
   font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#total_clientes, #sumatoria_carrito {
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -82,6 +99,29 @@ h4 {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
+}
+
+.tabla__productos {
+  padding-top: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.informacion__tarjeta {
+  width: 90%;
+  margin-top: 1.8rem;
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.datos__tarjeta {
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }
 
 .label__producto {
@@ -192,4 +232,10 @@ h4 {
 }
 .productos__listado .card__product .card__boton button {
   width: 100%;
+}
+
+footer {
+  height: 6rem;
+  vertical-align: middle;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

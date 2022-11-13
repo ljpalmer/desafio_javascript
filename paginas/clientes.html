@@ -13,8 +13,8 @@
             rel="stylesheet"
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="estilos/style.css">
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <link rel="shortcut icon" href="../images/favicon.ico">
     </head>
     <body>
         <header>
@@ -35,10 +35,10 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarMercadoPeru">
                             <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
-                                <a class="nav-link" href="paginas/productos.html">PRODUCTOS</a>
-                                <a class="nav-link" href="paginas/carrito.html">CARRITO</a>
-                                <a class="nav-link" href="paginas/clientes.html">CLIENTES</a>
+                                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                                <a class="nav-link" href="../paginas/productos.html">PRODUCTOS</a>
+                                <a class="nav-link" href="../paginas/carrito.html">CARRITO</a>
+                                <a class="nav-link active" href="../paginas/clientes.html">CLIENTES</a>
                             </div>
                         </div>
                     </div>
@@ -47,29 +47,35 @@
         </header>
         <main>
             
-                <div class="principal">
-                    <div class="card">
-                        <div class="card-header text-center">
-                          Bienvenido a Mercado Per&uacute;
+            <article class="tabla__clientes ">
+                <div class="col-12">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h2>CLIENTES REGISTRADOS</h2>                          
                         </div>
-                        <div class="card-body text-center">
-                          <!-- <h5 class="card-title">Special title treatment</h5> -->
-                          <p class="card-text text-center">
-                            <img src="/images/logo_mercado_pago.gif" alt="Logo Mercado Pago" width="350px">
-                          </p>
-                          <p>
-                            Desarrollado por:
-                          </p>
-                          <p class="autor">Luis Palmer García</p>
-                          <p>@lpalmerg</p>
-                          <p>www.luispalmer.com</p>
-                          <!-- <div class="text-center">
-                            <a href="#" class="btn btn-primary btn">¡Empecemos a comprar!</a>
-                          </div>                           -->
+                        <div class="card-body">
+                          <h5 class="card-title">INFORMACIÓN DE LOS CLIENTES</h5>
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Apellido y Nombre</th>
+                                <th scope="col">Documento</th>
+                                <th scope="col">Edad</th>
+                                <th scope="col">Numero Tarjeta</th>
+                                <th scope="col">Vencimiento Tajeta</th>
+                                <th scope="col">CVV Tajeta</th>
+                              </tr>
+                            </thead>
+                            <tbody id="body_table_client">
+                            </tbody>
+                          </table>
                         </div>
-                    </div>
+                        <div class="card-footer text-muted">
+                          <b>Numero de Clientes Registrados:</b> <small id="total_clientes">0</small> 
+                        </div>
+                      </div>
                 </div>                
-            
+            </article>                
         </main>
         <footer class="text-center">
             <!-- informacion de la tienda -->
@@ -124,10 +130,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
             crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <!-- <script src="js/catalogo_productos.js"></script> -->
-        <!-- <script src="js/carrito.js"></script> -->
-        <!-- <script src="js/clientes.js"></script> -->
-        <!-- <script src="js/desafio_coder.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>        
+        <script src="../js/listado_cliente.js"></script>        
     </body>
 </html>
