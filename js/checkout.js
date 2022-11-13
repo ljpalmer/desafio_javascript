@@ -106,8 +106,8 @@ function fnc_js_cargarDataCarrito() {
 };
 function fnc_js_quitarProductoCarrito(id) {
     Swal.fire({
-            title: '¿Deseas reiniciar tu carrito?',
-            text: `Se perdera los productos agregados`,
+            title: '¿Deseas quitar producto de tu carrito?',
+            text: `Se eliminara el producto seleccionado`,
             showCancelButton: true,
             confirmButtonColor: '#008f39',
             cancelButtonColor: '#d33',
