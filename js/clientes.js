@@ -94,7 +94,7 @@ function fnc_js_busquedaCliente(dni){
                                    clientes[posicion_cliente].fecha,
                                    clientes[posicion_cliente].cvv);
         let sesionCliente = document.getElementById("sesion_cliente");
-        sesionCliente.innerHTML = "";  
+        sesionCliente.innerHTML = '<button id="boton_finalizar_sesion" class="btn btn-danger" onclick="fnc_js_finalizar_sesion()">Finalizar Sesión</button>';
         Swal.fire(
             'Bienvenido a Mercado - Perú',
             clientes[posicion_cliente].nombre+' '+clientes[posicion_cliente].apellido+ ' ha iniciado sesión',
