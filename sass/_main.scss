@@ -20,11 +20,37 @@ h4 {
     font-size: 1.8rem;
     font-weight: bold;
 }
+#total_clientes, #sumatoria_carrito {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
 .texto__producto{    
     color: black;
     font-weight: bold;
     font-family: $body-font-family-poppins; 
     font-size: 1.4rem;
+}
+.tabla__productos{
+    padding-top: 4rem;
+    // width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: $body-font-family-poppins;
+    font-size: 1.2rem;
+}
+.informacion__tarjeta{
+    width: 90%;
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.datos__tarjeta{
+    text-align: center;
+    width:50%;
+    margin: auto;
 }
 .label__producto{    
     font-weight: bold;

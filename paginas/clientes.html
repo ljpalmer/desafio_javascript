@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entrega Final - Javascript Carrito de Compras Mercado Perú</title>
+        <!-- TOASTIFY -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <!-- BOOTSTRAP -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <link rel="shortcut icon" href="../images/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <!-- menu de navegacion -->
+            <header class="mb-5">
+                <nav class="navbar navbar-expand-lg navbar-dark m-6">
+                    <div class="container-fluid">
+                        <a class="navbar-brand logo" href="./index.html">MERCADO-PERÚ</a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarMercadoPeru"
+                            aria-controls="navbarMercadoPeru"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarMercadoPeru">
+                            <div class="navbar-nav">
+                                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                                <a class="nav-link" href="../paginas/productos.html">PRODUCTOS</a>
+                                <a class="nav-link" href="../paginas/carrito.html">CARRITO</a>
+                                <a class="nav-link active" href="../paginas/clientes.html">CLIENTES</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </header>
+        <main>
+            
+            <article class="tabla__clientes ">
+                <div class="col-12">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h2>CLIENTES REGISTRADOS</h2>                          
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">INFORMACIÓN DE LOS CLIENTES</h5>
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Apellido y Nombre</th>
+                                <th scope="col">Documento</th>
+                                <th scope="col">Edad</th>
+                                <th scope="col">Numero Tarjeta</th>
+                                <th scope="col">Vencimiento Tajeta</th>
+                                <th scope="col">CVV Tajeta</th>
+                              </tr>
+                            </thead>
+                            <tbody id="body_table_client">
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="card-footer text-muted">
+                          <b>Numero de Clientes Registrados:</b> <small id="total_clientes">0</small> 
+                        </div>
+                      </div>
+                </div>                
+            </article>                
+        </main>
+        <footer class="text-center">
+            <!-- informacion de la tienda -->
+            <b>Somos Mercado Perú - 2022</b>
+        </footer>
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLongTitle">DETALLE DEL PRODUCTO</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="label__producto">
+                            Nombre del producto:
+                            <span id="producto_nombre" class="texto__producto"></span>
+                        </div>
+                        <div class="label__producto">
+                            Descripcion del producto:
+                            <span id="producto_descripcion" class="texto__producto"></span>
+                        </div>
+                        <div class="label__producto">
+                            Precio del producto:
+                            <span id="producto_precio" class="texto__producto"></span>
+                        </div>
+                        <div class="label__producto">
+                            Imagen del producto:
+                            <img id="producto_imagen" src="" alt="imagen_producto"></img>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            onclick="fnc_js_cerrarDetalleProducto()">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>        
+        <script src="../js/listado_cliente.js"></script>        
+    </body>
+</html>

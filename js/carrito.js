@@ -1,64 +1,47 @@
 //Variables globales para la busqueda y variable del carrito de compras
+const CONS_PAGINA_PRODUCTOS = 1;
+const CONS_PAGINA_CARRITO = 2;
+
 const resultado = document.getElementById("resultado");
 let carrito_compras = fnc_js_cargarCarritoCompras();
 
 //DOM: Procedemos a crear la seccion del carrito
-let section_Carrito = document.getElementById("carrito");
+  let section_Carrito = document.getElementById("carrito");
 
-let botonReiniciar = document.createElement("button");
-botonReiniciar.innerText = "Reiniciar Carrito";
-section_Carrito.appendChild(botonReiniciar);
-botonReiniciar.setAttribute("class", "btn btn-warning btn-block");
-botonReiniciar.addEventListener('click', fnc_js_reiniciarCarritoCompras);
+  let botonReiniciar = document.createElement("button");
+  botonReiniciar.innerText = "Reiniciar Carrito";
+  section_Carrito.appendChild(botonReiniciar);
+  botonReiniciar.setAttribute("class", "btn btn-warning btn-block");
+  
+  
+  let totalCompra = document.createElement("div");
+  totalCompra.innerHTML = "<h2>Total Carrito:</h2>";
+  section_Carrito.appendChild(totalCompra);
+  
+  let montoTotalCompra = document.createElement("p");
+  montoTotalCompra.innerText = "$ 0.00";
+  totalCompra.appendChild(montoTotalCompra);
+  
+  let cantidadProductos = document.createElement("div");
+  cantidadProductos.innerHTML = "<h3>Cantidad de productos: </h3>";
+  section_Carrito.appendChild(cantidadProductos);
+  
+  let cantProductos = document.createElement("p");
+  cantProductos.innerText = "0";
+  cantidadProductos.appendChild(cantProductos);
+  
+  let botonFinalizar = document.createElement("button");
+  botonFinalizar.innerText = "Finalizar compra";
+  section_Carrito.appendChild(botonFinalizar);
+  botonFinalizar.setAttribute("class", "btn btn-primary btn-block");
 
-let totalCompra = document.createElement("div");
-totalCompra.innerHTML = "<h2>Total Carrito:</h2>";
-section_Carrito.appendChild(totalCompra);
-
-let montoTotalCompra = document.createElement("p");
-montoTotalCompra.innerText = "$ 0.00";
-totalCompra.appendChild(montoTotalCompra);
-
-let cantidadProductos = document.createElement("div");
-cantidadProductos.innerHTML = "<h3>Cantidad de productos: </h3>";
-section_Carrito.appendChild(cantidadProductos);
-
-let cantProductos = document.createElement("p");
-cantProductos.innerText = "0";
-cantidadProductos.appendChild(cantProductos);
-
-let botonFinalizar = document.createElement("button");
-botonFinalizar.innerText = "Finalizar compra";
-section_Carrito.appendChild(botonFinalizar);
-botonFinalizar.setAttribute("class", "btn btn-primary btn-block");
-botonFinalizar.addEventListener('click', fnc_js_finalizarCarritoCompras);
-
-//funcion para filtrar los productos
-function fnc_js_filtrarProductos(){
-    resultado.innerHTML = '';
-    const texto = texto_buscar.value.toLowerCase();
-    for ( let producto of productos ){
-        let nombre = producto.title.toLowerCase();
-
-        if ( nombre.indexOf(texto) !== -1){
-            resultado.innerHTML += `
-            <div class="card__product" style="width: 20rem;" id="resultado-producto${producto.id}">
-                <img src="${producto.thumbnail}" class="card-img" alt="${producto.title}">
-                <div class="card__body">
-                    <p class="card__title">Producto: ${producto.title}</h5>
-                    <p class="card__category">Categoría: ${producto.category}</p>
-                    <p class="card__price">Precio: $ ${producto.price.toFixed(2)}</p>
-                </div>
-                <div class="card__boton row"><div class="col-6"><button type="button" class="btn btn-primary btn-block" onclick="fnc_js_preguntarAgregarProductoCarrito(${producto.id})">Agregar</button></div><div class="col-6"><button class="btn btn-warning btn-block" onclick="fnc_js_abrirDetalleProducto(${producto.id})">Ver</button></div></div>
-            </div>
-            `
-        }
-    }
-    if ( resultado.innerHTML === '' ){
-        resultado.innerHTML = `Producto no encontrado`
-    }
-};
+  botonFinalizar.addEventListener('click', fnc_js_finalizarCarritoCompras);
+  botonReiniciar.addEventListener('click', fnc_js_reiniciarCarritoCompras);
 //funcion para reinicializar el carrito y calcular el precio total a pagar
+
+function fnc_js_cerrarDetalleProducto(){
+  $("#exampleModalCenter").modal('hide');  
+}
 function fnc_js_finalizarCarritoCompras() {
     const precioFinal = montoTotalCompra.innerText;
     //uso sweet alert para que el usuario confirme su compra, cuando toca si se vacia el carrito
@@ -72,13 +55,7 @@ function fnc_js_finalizarCarritoCompras() {
       cancelButtonText: 'No'
     }).then((result) => {
       if (result.isConfirmed) {        
-        Swal.fire(
-          'Compra confirmada',
-          '¡Que lo disfrutes!',
-          'success'
-        );       
-        fnc_js_vaciarCarritoCompras();         
-        fnc_js_calcularTotalCarrito();
+        fnc_js_redireccionar();        
       }
     })
 };
@@ -100,7 +77,8 @@ function fnc_js_reiniciarCarritoCompras() {
           '¡Empieza a buscar los productos de tu preferencia!',
           'success'
         );        
-        fnc_js_vaciarCarritoCompras();        
+        fnc_js_vaciarCarritoCompras();   
+        fnc_js_filtrarProductos();             
         fnc_js_calcularTotalCarrito();
       }
     })
@@ -108,18 +86,14 @@ function fnc_js_reiniciarCarritoCompras() {
 //funcion para agregar el producto al carrito de compras
 function fnc_js_agregarCarritoCompras(id){    
         carrito_compras.push(productos.find(p => p.id == id));  
-        // console.log(productos.indexOf(productos.find(p => p.id == id)));  
-        // productos.splice(productos.indexOf(productos.find(p => p.id == id)));
         localStorage.setItem("carrito_compras", JSON.stringify(carrito_compras));   
+        fnc_js_filtrarProductos();
         fnc_js_calcularTotalCarrito();      
 };
 //funcion para calcular el nuevo total a pagar del carrito de compras asi como la cantidad de productos en el carrito
 function fnc_js_calcularTotalCarrito() {
     let totalPagar = 0;
-    for (const producto of carrito_compras) {
-        //console.log(producto.price);
-        // console.log(typeof producto.price);
-        // console.log(typeof totalPagar);        
+    for (const producto of carrito_compras) {      
         totalPagar += producto.price;
     }
     montoTotalCompra.innerText = '$ '+ totalPagar.toFixed(2);
@@ -138,6 +112,7 @@ function fnc_js_vaciarCarritoCompras () {
   //manteniendo la data de los clientes
   localStorage.removeItem("carrito_compras");
   carrito_compras = [];
+  fnc_js_filtrarProductos();
 };
 //funcion para preguntar si desea agregar el producto al carrito, si se confirma llama a la funcion fnc_js_agregarCarritoCompras
 function fnc_js_preguntarAgregarProductoCarrito(id){
@@ -191,4 +166,8 @@ function fnc_js_cerrarDetalleProducto(){
 //Calcula un random para obtener una imagen aleatoria, recibe un intervalo para generar numeros aleatorios
 function getRandomIndex(min, max) {
     return (max==0)  ? 0 : Math.round(Math.random() * (max - min) + min, 0);     
+}
+
+function fnc_js_redireccionar(){
+  window.location.href = "carrito.html";
 }
